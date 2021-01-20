@@ -12,18 +12,7 @@ npm install --save ezformer
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'ezformer'
-import 'ezformer/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
+Documention coming soon
 
 ## License
 

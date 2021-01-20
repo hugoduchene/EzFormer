@@ -1,8 +1,8 @@
 {
   "name": "ezformer",
   "version": "0.1.212",
-  "description": "ezformer is a library to facilitate the frontend design of web applications.",
-  "author": "hugoduchene",
+  "description": "ezformer is a librairie to setup easily a website",
+  "author": "hugo duchene",
   "license": "MIT",
   "repository": "hugoduchene/ezformer",
   "main": "dist/index.js",
@@ -49,8 +49,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "styled-components": "^5.2.1"
-  }
+  ]
 }
