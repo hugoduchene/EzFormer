@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import React from 'react'
 
 export const Box = styled.section`
     flex-direction: ${props => props.flexDirection ? props.flexDirection: null};
@@ -16,15 +17,30 @@ export const Box = styled.section`
       }
 `;
 
+export const Container = styled.div`
+    flex-direction: ${props => props.flexDirection ? props.flexDirection : null};
+    flex-wrap: wrap;
+    display: ${props => props.flex ? "flex" : "relative"};
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        width: 90%;
+       }
+    `;
+
 export const Col = styled.div`
     flex: 1 1 ${props => props.size ? props.size : null};
     min-width: ${props => props.size ? props.size : null};
+    max-width: ${props => props.size ? props.size : null};
     align-items: ${props => props.alignItems ? props.alignItems : null};
     justify-content: ${props => props.justifyContent ? props.justifyContent : props.alignItems ? "center" : null};
     display: ${props => props.justifyContent || props.alignItems ? "flex" : null};
     flex-direction: ${props => props.justifyContent || props.alignItems ? "column" : null};
     @media (max-width: 768px) {
         flex: 1 1 100%!important;
+        min-width: 100%!important;
+        max-width: 100%!important;
       }
 `;
 
